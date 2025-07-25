@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/home/aye/qt/calculator/build/calculator_autogen",
+	"CMAKE_BINARY_DIR" : "/home/aye/qt/calculator/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/aye/qt/calculator/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/aye/qt/calculator",
+	"CMAKE_SOURCE_DIR" : "/home/aye/qt/calculator",
+	"INCLUDE_DIR" : "/home/aye/qt/calculator/build/calculator_autogen/include",
+	"INPUTS" : [ "/home/aye/qt/calculator/images/logo.jpg" ],
+	"LOCK_FILE" : "/home/aye/qt/calculator/build/CMakeFiles/calculator_autogen.dir/AutoRcc_images_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "images" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_images.cpp",
+	"RCC_EXECUTABLE" : "/home/aye/Qtwebassembly/6.9.1/gcc_64/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/aye/qt/calculator/build/CMakeFiles/calculator_autogen.dir/AutoRcc_images_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/aye/qt/calculator/images.qrc",
+	"VERBOSITY" : 0
+}

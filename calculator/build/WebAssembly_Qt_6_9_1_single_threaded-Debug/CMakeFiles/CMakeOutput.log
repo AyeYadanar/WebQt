@@ -1,0 +1,109 @@
+The target system is: Emscripten - 1 - x86
+The host system is: Linux - 6.8.0-64-generic - x86_64
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: /home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_14849/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_14849.dir/build.make CMakeFiles/cmTC_14849.dir/build
+gmake[1]: Entering directory '/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_14849.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -std=gnu++17 -MD -MT CMakeFiles/cmTC_14849.dir/src.cxx.o -MF CMakeFiles/cmTC_14849.dir/src.cxx.o.d -o CMakeFiles/cmTC_14849.dir/src.cxx.o -c /home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_14849.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14849.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DQT_QML_DEBUG  @CMakeFiles/cmTC_14849.dir/objects1.rsp -o cmTC_14849.js 
+gmake[1]: Leaving directory '/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}
+Performing C++ SOURCE FILE Test HAVE_GETTIME succeeded with the following output:
+Change Dir: /home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5ac2b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5ac2b.dir/build.make CMakeFiles/cmTC_5ac2b.dir/build
+gmake[1]: Entering directory '/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5ac2b.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_GETTIME  -DQT_QML_DEBUG  -std=gnu++17 -MD -MT CMakeFiles/cmTC_5ac2b.dir/src.cxx.o -MF CMakeFiles/cmTC_5ac2b.dir/src.cxx.o.d -o CMakeFiles/cmTC_5ac2b.dir/src.cxx.o -c /home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5ac2b.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ac2b.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DQT_QML_DEBUG  @CMakeFiles/cmTC_5ac2b.dir/objects1.rsp -o cmTC_5ac2b.js 
+gmake[1]: Leaving directory '/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <time.h>
+#include <unistd.h>
+
+int main(int, char **) {
+    struct timespec ts;
+    clock_gettime(CLOCK_REALTIME, &ts);
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_SHM_OPEN_SHM_UNLINK succeeded with the following output:
+Change Dir: /home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ced3b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ced3b.dir/build.make CMakeFiles/cmTC_ced3b.dir/build
+gmake[1]: Entering directory '/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ced3b.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_SHM_OPEN_SHM_UNLINK  -DQT_QML_DEBUG  -std=gnu++17 -MD -MT CMakeFiles/cmTC_ced3b.dir/src.cxx.o -MF CMakeFiles/cmTC_ced3b.dir/src.cxx.o.d -o CMakeFiles/cmTC_ced3b.dir/src.cxx.o -c /home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ced3b.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ced3b.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DQT_QML_DEBUG  @CMakeFiles/cmTC_ced3b.dir/objects1.rsp -o cmTC_ced3b.js 
+gmake[1]: Leaving directory '/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+
+int main(int, char **) {
+    shm_open("test", O_RDWR | O_CREAT | O_EXCL, 0666);
+    shm_unlink("test");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_EGL succeeded with the following output:
+Change Dir: /home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_76fdb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_76fdb.dir/build.make CMakeFiles/cmTC_76fdb.dir/build
+gmake[1]: Entering directory '/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_76fdb.dir/src.cxx.o
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DHAVE_EGL  -DQT_QML_DEBUG  -std=gnu++17 -MD -MT CMakeFiles/cmTC_76fdb.dir/src.cxx.o -MF CMakeFiles/cmTC_76fdb.dir/src.cxx.o.d -o CMakeFiles/cmTC_76fdb.dir/src.cxx.o -c /home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_76fdb.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76fdb.dir/link.txt --verbose=1
+/home/aye/dev/emsdk/upstream/emscripten/em++ -DQT_QML_DEBUG  @CMakeFiles/cmTC_76fdb.dir/objects1.rsp -o cmTC_76fdb.js 
+gmake[1]: Leaving directory '/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <EGL/egl.h>
+
+int main(int, char **) {
+    [[maybe_unused]] EGLint x = 0;
+    EGLDisplay dpy = 0; EGLContext ctx = 0;
+    eglDestroyContext(dpy, ctx);
+}

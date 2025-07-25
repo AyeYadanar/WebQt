@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_calculator_FILE /home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/calculator.js)
+set(__QT_DEPLOY_TARGET_calculator_TYPE EXECUTABLE)

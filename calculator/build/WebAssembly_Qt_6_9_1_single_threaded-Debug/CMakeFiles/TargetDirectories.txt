@@ -1,0 +1,8 @@
+/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/calculator.dir
+/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/edit_cache.dir
+/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/rebuild_cache.dir
+/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/list_install_components.dir
+/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/install.dir
+/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/install/local.dir
+/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/install/strip.dir
+/home/aye/qt/calculator/build/WebAssembly_Qt_6_9_1_single_threaded-Debug/CMakeFiles/calculator_autogen.dir

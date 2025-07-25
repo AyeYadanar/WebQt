@@ -1,0 +1,8 @@
+/home/aye/qt/calculator/build/CMakeFiles/calculator.dir
+/home/aye/qt/calculator/build/CMakeFiles/edit_cache.dir
+/home/aye/qt/calculator/build/CMakeFiles/rebuild_cache.dir
+/home/aye/qt/calculator/build/CMakeFiles/list_install_components.dir
+/home/aye/qt/calculator/build/CMakeFiles/install.dir
+/home/aye/qt/calculator/build/CMakeFiles/install/local.dir
+/home/aye/qt/calculator/build/CMakeFiles/install/strip.dir
+/home/aye/qt/calculator/build/CMakeFiles/calculator_autogen.dir
