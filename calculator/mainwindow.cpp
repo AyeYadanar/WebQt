@@ -13,27 +13,27 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label->setText("ROM ROBOTICS");
     ui->label_2->setText("ROBOTICS CALCULATOR");
     //ui->label->setStyleSheet("QLabel{color:white;}");
-    ui->rpm->setStyleSheet("QPushButton{background-color: grey; color: white;}"
+    ui->rpm->setStyleSheet("QPushButton{background-color: grey; color: black;}"
                                   "QPushButton:hover {"
                                   "  background-color: green;"
                                   "}");
     ui->velocity->setStyleSheet("QPushButton {"
                                     "  background-color: grey;"
-                                    "  color: white;"
+                                    "  color: black;"
                                     "}"
                                     "QPushButton:hover {"
                                     "  background-color: purple;"
                                     "}");
     ui->distance->setStyleSheet("QPushButton {"
                                     "  background-color: grey;"
-                                    "  color: white;"
+                                    "  color: black;"
                                     "}"
                                     "QPushButton:hover {"
                                     "  background-color: blue;"
                                     "}");
     ui->pid->setStyleSheet("QPushButton {"
                                     "  background-color: grey;"
-                                    "  color: white;"
+                                    "  color: black;"
                                     "}"
                                     "QPushButton:hover {"
                                     "  background-color: red;"

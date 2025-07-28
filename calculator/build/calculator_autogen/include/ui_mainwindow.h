@@ -29,7 +29,6 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout_2;
-    QSpacerItem *verticalSpacer;
     QPushButton *pushButton_9;
     QSpacerItem *verticalSpacer_4;
     QLabel *label;
@@ -46,6 +45,7 @@ public:
     QSpacerItem *horizontalSpacer_5;
     QPushButton *pid;
     QSpacerItem *horizontalSpacer_4;
+    QSpacerItem *verticalSpacer;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -59,10 +59,6 @@ public:
         centralwidget->setObjectName("centralwidget");
         verticalLayout_2 = new QVBoxLayout(centralwidget);
         verticalLayout_2->setObjectName("verticalLayout_2");
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
-
-        verticalLayout_2->addItem(verticalSpacer);
-
         pushButton_9 = new QPushButton(centralwidget);
         pushButton_9->setObjectName("pushButton_9");
         QSizePolicy sizePolicy(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Fixed);
@@ -74,7 +70,7 @@ public:
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/images/logo.jpg"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         pushButton_9->setIcon(icon);
-        pushButton_9->setIconSize(QSize(124, 124));
+        pushButton_9->setIconSize(QSize(200, 200));
 
         verticalLayout_2->addWidget(pushButton_9, 0, Qt::AlignmentFlag::AlignHCenter);
 
@@ -85,7 +81,7 @@ public:
         label = new QLabel(centralwidget);
         label->setObjectName("label");
         QFont font;
-        font.setPointSize(22);
+        font.setPointSize(33);
         font.setBold(true);
         label->setFont(font);
 
@@ -98,7 +94,7 @@ public:
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
         QFont font1;
-        font1.setPointSize(16);
+        font1.setPointSize(26);
         font1.setBold(true);
         label_2->setFont(font1);
 
@@ -116,6 +112,10 @@ public:
 
         rpm = new QPushButton(centralwidget);
         rpm->setObjectName("rpm");
+        sizePolicy.setHeightForWidth(rpm->sizePolicy().hasHeightForWidth());
+        rpm->setSizePolicy(sizePolicy);
+        rpm->setMinimumSize(QSize(100, 50));
+        rpm->setMaximumSize(QSize(1677721, 1677721));
 
         horizontalLayout->addWidget(rpm);
 
@@ -125,6 +125,7 @@ public:
 
         velocity = new QPushButton(centralwidget);
         velocity->setObjectName("velocity");
+        velocity->setMinimumSize(QSize(100, 50));
 
         horizontalLayout->addWidget(velocity);
 
@@ -134,6 +135,7 @@ public:
 
         distance = new QPushButton(centralwidget);
         distance->setObjectName("distance");
+        distance->setMinimumSize(QSize(100, 50));
 
         horizontalLayout->addWidget(distance);
 
@@ -143,6 +145,7 @@ public:
 
         pid = new QPushButton(centralwidget);
         pid->setObjectName("pid");
+        pid->setMinimumSize(QSize(100, 50));
 
         horizontalLayout->addWidget(pid);
 
@@ -152,6 +155,10 @@ public:
 
 
         verticalLayout_2->addLayout(horizontalLayout);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
