@@ -11,8 +11,8 @@ Distance::Distance(QMainWindow *mainWin , QWidget *parent)
     connect(ui->home, &QPushButton::clicked, this, &Distance::on_home_clicked);
     ui->label_4->setText("Encoder Count");
     ui->label_5->setText("CPR");
-    ui->label_6->setText("Wheel Radius");
-    ui->label_7->setText("Wheel Distance");
+    ui->label_6->setText("Wheel Radius(m)");
+    ui->label_7->setText("Wheel Distance(m)");
     ui->label_9->setText("Distance");
     ui->label->setText("Encoder Count To Distance");
 }
