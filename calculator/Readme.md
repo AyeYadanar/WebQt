@@ -77,26 +77,26 @@ source ./emsdk_env.sh
 ```
 ### 2. Install Qt for WebAssembly
     Download Qt for WebAssembly via Qt Online Installer or using qtchooser.
-```
+```bash
     qt-unified-linux-x64-online.run
 ```
 > Select Qt 6.x > WebAssembly during installation
 
 ### 3. Set Up CMake Build
-```
+```bash
 mkdir build-wasm && cd build-wasm
 emcmake cmake .. \
   -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_PREFIX_PATH=/path/to/Qt6/wasm_64/lib/cmake
 ```
-```
+```bash
 cmake --build .
 cmake -DCMAKE_TOOLCHAIN_FILE=/home/aye/Qtwebassembly/6.9.1/wasm_singlethread/lib/cmake/Qt6/qt.toolchain.cmake ..
 ```
 //use to this project for build cmake
 
 ### 4. Run in a Local Server
-```
+```bash
 emrun --no_browser --port 8080 .
 ```
 > Then open http://localhost:8080/calculator.html
